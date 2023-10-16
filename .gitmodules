@@ -1,0 +1,3 @@
+[submodule "goflow2"]
+	path = goflow2
+	url = https://github.com/nocsysmonitor/goflow2
