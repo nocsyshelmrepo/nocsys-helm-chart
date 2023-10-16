@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  flow-pipeline-umbrella:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-10-16T07:49:31.761664632Z"
+    dependencies:
+    - condition: udpreplicator.enabled
+      name: udpreplicator
+      repository: file://udpreplicator
+      version: 0.1.0
+    - condition: goflow.enabled
+      name: goflow
+      repository: file://goflow/
+      version: 0.1.0
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.0.6
+    - condition: altinity-clickhouse-operator.enabled
+      name: altinity-clickhouse-operator
+      repository: https://docs.altinity.com/clickhouse-operator/
+      version: 0.20.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.50.8
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.6.1
+    description: Installs goflow, kafka, clickhouse, etc...
+    digest: 304e3b49b8761922b258d997a13275052d711be7897b9d2800a7a6f2a5760435
+    keywords:
+    - flow-pipeline
+    name: flow-pipeline-umbrella
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/flow-pipeline-umbrella-1.0.0/flow-pipeline-umbrella-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-10-16T07:49:31.761673331Z"
