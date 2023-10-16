@@ -1,3 +1,6 @@
 [submodule "goflow2"]
 	path = goflow2
 	url = https://github.com/nocsysmonitor/goflow2
+[submodule "charts/helm-snort-ids"]
+	path = charts/helm-snort-ids
+	url = https://github.com/nocsyshelmrepo/helm-snort-ids
