@@ -1,5 +1,35 @@
 apiVersion: v1
 entries:
+  ecpaas-helm-snort-ids:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-10-16T08:56:02.887819294Z"
+    dependencies:
+    - condition: snortsft.enabled
+      name: snortsft
+      repository: file://snortsft
+      version: 0.1.0
+    - condition: barnyard2.enabled
+      name: barnyard2
+      repository: file://barnyard2
+      version: 0.1.0
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.12.3
+    - condition: snorby.enabled
+      name: snorby
+      repository: file://snorby
+      version: 0.1.0
+    description: Installs snort ids on ecpaas.
+    digest: 9533c67c3326aec7e8fe825cb3d88c7010fd34eb31ca0cd6839d6297a45adbdd
+    keywords:
+    - snort
+    name: ecpaas-helm-snort-ids
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/ecpaas-helm-snort-ids-1.0.0/ecpaas-helm-snort-ids-1.0.0.tgz
+    version: 1.0.0
   flow-pipeline-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -38,4 +68,4 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/flow-pipeline-umbrella-1.0.0/flow-pipeline-umbrella-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-16T07:49:31.761673331Z"
+generated: "2023-10-16T08:56:02.887833894Z"
