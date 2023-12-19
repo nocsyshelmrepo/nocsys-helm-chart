@@ -97,4 +97,15 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/flow-pipeline-umbrella-1.0.0/flow-pipeline-umbrella-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-16T09:21:47.367692002Z"
+  yolo:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-12-19T01:04:27.873899171Z"
+    description: A Helm chart to deploy yolo on k8s.
+    digest: 95ffedb0f2e7835867e33641ff9f9739c3ebd8fa6b318ae3302f923673616acb
+    name: yolo
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yolo-0.1.0/yolo-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-12-19T01:04:27.873917385Z"
