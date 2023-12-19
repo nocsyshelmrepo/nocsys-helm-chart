@@ -4,3 +4,6 @@
 [submodule "charts/helm-snort-ids"]
 	path = charts/helm-snort-ids
 	url = https://github.com/nocsyshelmrepo/helm-snort-ids
+[submodule "charts/helm-yolo"]
+	path = charts/helm-yolo
+	url = https://github.com/nocsyshelmrepo/helm-yolo
