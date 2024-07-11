@@ -7,3 +7,6 @@
 [submodule "charts/helm-yolo"]
 	path = charts/helm-yolo
 	url = https://github.com/nocsyshelmrepo/helm-yolo
+[submodule "charts/helm-mars"]
+	path = charts/helm-mars
+	url = https://github.com/nocsyshelmrepo/helm-mars
