@@ -134,6 +134,17 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/flow-pipeline-umbrella-1.0.0/flow-pipeline-umbrella-1.0.0.tgz
     version: 1.0.0
+  mars:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-07-11T02:01:43.766107838Z"
+    description: A Helm chart to deploy mars on k8s.
+    digest: 8a48880adcfb0e3fa5fd7aa64219dcf6cc8a95793510f13ac493e970cfd5f828
+    name: mars
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/mars-1.0.0/mars-1.0.0.tgz
+    version: 1.0.0
   yolo:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -145,4 +156,4 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yolo-0.1.0/yolo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-05T01:59:21.413685658Z"
+generated: "2024-07-11T02:01:43.766123567Z"
