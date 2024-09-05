@@ -62,6 +62,43 @@ entries:
   flow-pipeline-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-09-05T09:22:11.736750257Z"
+    dependencies:
+    - condition: udpreplicator.enabled
+      name: udpreplicator
+      repository: file://udpreplicator
+      version: 0.1.0
+    - condition: goflow.enabled
+      name: goflow
+      repository: file://goflow/
+      version: 0.1.0
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.0.6
+    - condition: altinity-clickhouse-operator.enabled
+      name: altinity-clickhouse-operator
+      repository: https://docs.altinity.com/clickhouse-operator/
+      version: 0.20.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.50.8
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.6.1
+    description: Installs goflow, kafka, clickhouse, etc...
+    digest: 349f1db13723d09f0873c8cb82580e7b893ef23cfe68d5432a3f8cc8fbcb8bb7
+    keywords:
+    - flow-pipeline
+    name: flow-pipeline-umbrella
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/flow-pipeline-umbrella-1.0.4/flow-pipeline-umbrella-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-07-11T02:40:30.089246756Z"
     dependencies:
     - condition: udpreplicator.enabled
@@ -193,4 +230,4 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yolo-0.1.0/yolo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-11T02:40:30.089266794Z"
+generated: "2024-09-05T09:22:11.736776516Z"
