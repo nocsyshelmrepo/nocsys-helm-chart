@@ -10,3 +10,15 @@
 [submodule "charts/helm-mars"]
 	path = charts/helm-mars
 	url = https://github.com/nocsyshelmrepo/helm-mars
+[submodule "charts/code-server"]
+	path = charts/code-server
+	url = https://github.com/nocsyshelmrepo/code-server-helm-charts.git
+[submodule "charts/label-studio"]
+	path = charts/label-studio
+	url = https://github.com/nocsyshelmrepo/label-studio-helm-charts.git
+[submodule "charts/mlflow"]
+	path = charts/mlflow
+	url = https://github.com/nocsyshelmrepo/ml-flow-helm-charts.git
+[submodule "charts/rstudio"]
+	path = charts/rstudio
+	url = https://github.com/nocsyshelmrepo/dsri-helm-charts.git
