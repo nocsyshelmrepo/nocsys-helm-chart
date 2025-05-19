@@ -442,4 +442,32 @@ entries:
     urls:
     - https://github.com/jumpserver/helm-charts/releases/download/jumpserver-v4.9.0/jumpserver-v4.9.0.tgz
     version: v4.9.0
+  zabbix:
+  - apiVersion: v2
+    appVersion: 7.0.10
+    created: "2025-02-24T16:50:07.983798313Z"
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring
+      solution for network monitoring and application monitoring of millions of metrics.
+    digest: c46a7fc90242d2086c80856ea7090abd5b269576c5d1847c13584e64ae337ac2
+    home: https://www.zabbix.com
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metrics
+    - kubernetes
+    - helm
+    maintainers:
+    - email: aeciopires@yahoo.com.br
+      name: Aecio Pires
+      url: https://github.com/aeciopires
+    - email: christian.anton@inqbeo.de
+      name: Christian Anton
+      url: https://inqbeo.de
+    name: zabbix
+    sources:
+    - https://github.com/zabbix-community/helm-zabbix
+    urls:
+    - https://github.com/zabbix-community/helm-zabbix/releases/download/zabbix-7.0.6/zabbix-7.0.6.tgz
+    version: 7.0.6
 generated: "2024-09-05T09:22:11.736776516Z"
