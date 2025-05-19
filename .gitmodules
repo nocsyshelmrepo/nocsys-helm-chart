@@ -22,3 +22,6 @@
 [submodule "charts/rstudio"]
 	path = charts/rstudio
 	url = https://github.com/nocsyshelmrepo/dsri-helm-charts.git
+[submodule "yunikorn"]
+	path = yunikorn
+	url = https://github.com/apache/yunikorn-release
