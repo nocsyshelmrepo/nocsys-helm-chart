@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  code-server:
+  - apiVersion: v2
+    appVersion: 4.99.4
+    created: "2025-05-12T14:46:10.733876713+08:00"
+    description: A Helm chart for coder/code-server
+    digest: ee1e93cdb22988f45557eeebf3d2a2e98c4e603dd99bb667f947d265f753fdf5
+    name: code-server
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/code-server-3.26.4/code-server-3.26.4.tgz
+    version: 3.26.4
   ecpaas-helm-snort-ids:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -208,39 +219,72 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/flow-pipeline-umbrella-1.0.0/flow-pipeline-umbrella-1.0.0.tgz
     version: 1.0.0
-  mars:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2024-07-11T02:01:43.766107838Z"
-    description: A Helm chart to deploy mars on k8s.
-    digest: 8a48880adcfb0e3fa5fd7aa64219dcf6cc8a95793510f13ac493e970cfd5f828
-    name: mars
-    type: application
+  jumpserver:
+  - annotations:
+      category: Application
+      licenses: GPL-3.0
+    apiVersion: v2
+    appVersion: v4.9.0
+    created: "2025-04-17T13:29:29.959595249Z"
+    description: A Helm chart for Deploying Jumpserver on Kubernetes
+    digest: 617acd48186c5c23858d6419180551c7211791b0070574c3aaf039d449b42f08
+    home: https://jumpserver.org
+    icon: https://jumpserver.org/images/logo/favicon.ico
+    maintainers:
+    - name: FIT2CLOUD, Inc. All Rights Reserved.
+      url: https://github.com/jumpserver/helm-charts
+    name: jumpserver
+    sources:
+    - https://github.com/jumpserver/helm-charts/tree/main/charts/jumpserver
     urls:
-    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/mars-1.0.0/mars-1.0.0.tgz
-    version: 1.0.0
-  yolo:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2023-12-19T01:04:27.873899171Z"
-    description: A Helm chart to deploy yolo on k8s.
-    digest: 95ffedb0f2e7835867e33641ff9f9739c3ebd8fa6b318ae3302f923673616acb
-    name: yolo
-    type: application
+    - https://github.com/jumpserver/helm-charts/releases/download/jumpserver-v4.9.0/jumpserver-v4.9.0.tgz
+    version: v4.9.0
+  jupyterhub:
+  - annotations:
+      artifacthub.io/images: |
+        - image: quay.io/jupyterhub/configurable-http-proxy:4.6.3
+          name: configurable-http-proxy
+        - image: quay.io/jupyterhub/k8s-hub:4.2.1-0.dev.git.7014.hc8959795
+          name: k8s-hub
+        - image: quay.io/jupyterhub/k8s-image-awaiter:4.2.1-0.dev.git.7014.hc8959795
+          name: k8s-image-awaiter
+        - image: quay.io/jupyterhub/k8s-network-tools:4.2.1-0.dev.git.7014.hc8959795
+          name: k8s-network-tools
+        - image: quay.io/jupyterhub/k8s-secret-sync:4.2.1-0.dev.git.7023.hf1ed4048
+          name: k8s-secret-sync
+        - image: quay.io/jupyterhub/k8s-singleuser-sample:4.2.1-0.dev.git.7014.hc8959795
+          name: k8s-singleuser-sample
+        - image: registry.k8s.io/kube-scheduler:v1.30.12
+          name: kube-scheduler
+        - image: registry.k8s.io/pause:3.10
+          name: pause
+        - image: registry.k8s.io/pause:3.10
+          name: pause
+        - image: traefik:v3.4.0
+          name: traefik
+    apiVersion: v2
+    appVersion: 5.3.0
+    created: "2025-05-12T08:32:35.148049803Z"
+    description: Multi-user Jupyter installation
+    digest: 88849f7e53e3569d370b9e5a36b65f4bb026cb51c4e241e96024c6a1a66a02ad
+    home: https://z2jh.jupyter.org
+    icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.28.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yolo-0.1.0/yolo-0.1.0.tgz
-    version: 0.1.0
-  code-server:
-  - apiVersion: v2
-    appVersion: 4.99.4
-    created: "2025-05-12T14:46:10.733876713+08:00"
-    description: A Helm chart for coder/code-server
-    digest: ee1e93cdb22988f45557eeebf3d2a2e98c4e603dd99bb667f947d265f753fdf5
-    name: code-server
-    type: application
-    urls:
-    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/code-server-3.26.4/code-server-3.26.4.tgz
-    version: 3.26.4
+    - https://jupyterhub.github.io/helm-chart/jupyterhub-4.2.1-0.dev.git.7023.hf1ed4048.tgz
+    version: 4.2.1-0.dev.git.7023.hf1ed4048
   label-studio:
   - apiVersion: v2
     appVersion: 1.17.0
@@ -264,6 +308,17 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/label-studio-1.9.9/label-studio-1.9.9.tgz
     version: 1.9.9
+  mars:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-07-11T02:01:43.766107838Z"
+    description: A Helm chart to deploy mars on k8s.
+    digest: 8a48880adcfb0e3fa5fd7aa64219dcf6cc8a95793510f13ac493e970cfd5f828
+    name: mars
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/mars-1.0.0/mars-1.0.0.tgz
+    version: 1.0.0
   mlflow:
   - annotations:
       artifacthub.io/changes: |
@@ -376,72 +431,26 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/rstudio-0.1.28/rstudio-0.1.28.tgz
     version: 0.1.28
-  jupyterhub:
-  - annotations:
-      artifacthub.io/images: |
-        - image: quay.io/jupyterhub/configurable-http-proxy:4.6.3
-          name: configurable-http-proxy
-        - image: quay.io/jupyterhub/k8s-hub:4.2.1-0.dev.git.7014.hc8959795
-          name: k8s-hub
-        - image: quay.io/jupyterhub/k8s-image-awaiter:4.2.1-0.dev.git.7014.hc8959795
-          name: k8s-image-awaiter
-        - image: quay.io/jupyterhub/k8s-network-tools:4.2.1-0.dev.git.7014.hc8959795
-          name: k8s-network-tools
-        - image: quay.io/jupyterhub/k8s-secret-sync:4.2.1-0.dev.git.7023.hf1ed4048
-          name: k8s-secret-sync
-        - image: quay.io/jupyterhub/k8s-singleuser-sample:4.2.1-0.dev.git.7014.hc8959795
-          name: k8s-singleuser-sample
-        - image: registry.k8s.io/kube-scheduler:v1.30.12
-          name: kube-scheduler
-        - image: registry.k8s.io/pause:3.10
-          name: pause
-        - image: registry.k8s.io/pause:3.10
-          name: pause
-        - image: traefik:v3.4.0
-          name: traefik
-    apiVersion: v2
-    appVersion: 5.3.0
-    created: "2025-05-12T08:32:35.148049803Z"
-    description: Multi-user Jupyter installation
-    digest: 88849f7e53e3569d370b9e5a36b65f4bb026cb51c4e241e96024c6a1a66a02ad
-    home: https://z2jh.jupyter.org
-    icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
-    keywords:
-    - jupyter
-    - jupyterhub
-    - z2jh
-    kubeVersion: '>=1.28.0-0'
-    maintainers:
-    - email: erik@sundellopensource.se
-      name: Erik Sundell
-    - name: Simon Li
-      url: https://github.com/manics/
-    name: jupyterhub
-    sources:
-    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+  yolo:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-12-19T01:04:27.873899171Z"
+    description: A Helm chart to deploy yolo on k8s.
+    digest: 95ffedb0f2e7835867e33641ff9f9739c3ebd8fa6b318ae3302f923673616acb
+    name: yolo
+    type: application
     urls:
-    - https://jupyterhub.github.io/helm-chart/jupyterhub-4.2.1-0.dev.git.7023.hf1ed4048.tgz
-    version: 4.2.1-0.dev.git.7023.hf1ed4048
-  jumpserver:
-  - annotations:
-      category: Application
-      licenses: GPL-3.0
-    apiVersion: v2
-    appVersion: v4.9.0
-    created: "2025-04-17T13:29:29.959595249Z"
-    description: A Helm chart for Deploying Jumpserver on Kubernetes
-    digest: 617acd48186c5c23858d6419180551c7211791b0070574c3aaf039d449b42f08
-    home: https://jumpserver.org
-    icon: https://jumpserver.org/images/logo/favicon.ico
-    maintainers:
-    - name: FIT2CLOUD, Inc. All Rights Reserved.
-      url: https://github.com/jumpserver/helm-charts
-    name: jumpserver
-    sources:
-    - https://github.com/jumpserver/helm-charts/tree/main/charts/jumpserver
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yolo-0.1.0/yolo-0.1.0.tgz
+    version: 0.1.0
+  yunikorn:
+  - apiVersion: v1
+    created: "2025-05-20T02:07:20.815341804Z"
+    description: YuniKorn scheduler for Kubernetes
+    digest: 8dd25806c49e3aa18b865148ceda1000a0a302c6396c6c9d8fb146b9c71c7d14
+    name: yunikorn
     urls:
-    - https://github.com/jumpserver/helm-charts/releases/download/jumpserver-v4.9.0/jumpserver-v4.9.0.tgz
-    version: v4.9.0
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/yunikorn-0.0.0/yunikorn-0.0.0.tgz
+    version: 0.0.0
   zabbix:
   - apiVersion: v2
     appVersion: 7.0.10
@@ -470,4 +479,4 @@ entries:
     urls:
     - https://github.com/zabbix-community/helm-zabbix/releases/download/zabbix-7.0.6/zabbix-7.0.6.tgz
     version: 7.0.6
-generated: "2024-09-05T09:22:11.736776516Z"
+generated: "2025-05-20T02:07:20.815360979Z"
