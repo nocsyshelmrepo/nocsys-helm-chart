@@ -30,4 +30,4 @@
 	url = https://github.com/zabbix-community/helm-zabbix
 [submodule "jupyterhub"]
 	path = jupyterhub
-	url = https://github.com/jupyterhub/zero-to-jupyterhub-k8s.git
+	url = https://github.com/nocsyshelmrepo/zero-to-jupyterhub-k8s
