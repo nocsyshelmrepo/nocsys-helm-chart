@@ -22,6 +22,12 @@
 [submodule "charts/rstudio"]
 	path = charts/rstudio
 	url = https://github.com/nocsyshelmrepo/dsri-helm-charts.git
-[submodule "yunikorn"]
-	path = yunikorn
-	url = https://github.com/apache/yunikorn-release
+[submodule "jumpserver"]
+	path = jumpserver
+	url = https://github.com/jumpserver/helm-charts
+[submodule "zabbix"]
+	path = zabbix
+	url = https://github.com/zabbix-community/helm-zabbix
+[submodule "jupyterhub"]
+	path = jupyterhub
+	url = https://github.com/jupyterhub/zero-to-jupyterhub-k8s.git
