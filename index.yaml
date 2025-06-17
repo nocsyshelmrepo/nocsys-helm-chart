@@ -376,6 +376,16 @@ entries:
   mars:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-17T04:05:52.773110941Z"
+    description: A Helm chart to deploy mars on k8s.
+    digest: 6d9e0843af5beb2375d0f3c6f1e1f090acb8182b8234570b81b556ee38bd57de
+    name: mars
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/mars-1.0.2/mars-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-06-16T08:29:47.88622891Z"
     description: A Helm chart to deploy mars on k8s.
     digest: 80d989b71c90e91e7fc6be855f8ae9c85df7b145a45ff984567708241332f832
@@ -554,4 +564,4 @@ entries:
     urls:
     - https://github.com/zabbix-community/helm-zabbix/releases/download/zabbix-7.0.6/zabbix-7.0.6.tgz
     version: 7.0.6
-generated: "2025-06-16T08:29:47.886263214Z"
+generated: "2025-06-17T04:05:52.773149834Z"
