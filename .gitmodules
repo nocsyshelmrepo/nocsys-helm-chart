@@ -31,3 +31,6 @@
 [submodule "jupyterhub"]
 	path = jupyterhub
 	url = https://github.com/nocsyshelmrepo/zero-to-jupyterhub-k8s
+[submodule "jupyter-enterprise-gateway"]
+	path = jupyter-enterprise-gateway
+	url = https://github.com/nocsyshelmrepo/jupyter_enterprise_gateway
