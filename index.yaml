@@ -70,6 +70,22 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/test-helm-rel/releases/download/ecpaas-helm-snort-ids-1.0.0/ecpaas-helm-snort-ids-1.0.0.tgz
     version: 1.0.0
+  enterprise-gateway:
+  - apiVersion: v2
+    appVersion: 3.3.0
+    created: "2025-06-24T02:08:58.066361635Z"
+    description: A helm chart to deploy Jupyter Enterprise Gateway
+    digest: 61817cbda5332a34d8fc61483a5fa5861b8f926fc421fd2805bdbf05b7759161
+    home: https://jupyter.org
+    icon: https://avatars1.githubusercontent.com/u/7388996?s=200&v=4
+    kubeVersion: '>=1.18.0-0'
+    name: enterprise-gateway
+    sources:
+    - https://github.com/jupyter-server/enterprise_gateway
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/enterprise-gateway-3.3.0/enterprise-gateway-3.3.0.tgz
+    version: 3.3.0
   flow-pipeline-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -564,4 +580,4 @@ entries:
     urls:
     - https://github.com/zabbix-community/helm-zabbix/releases/download/zabbix-7.0.6/zabbix-7.0.6.tgz
     version: 7.0.6
-generated: "2025-06-17T04:05:52.773149834Z"
+generated: "2025-06-24T02:08:58.066404976Z"
