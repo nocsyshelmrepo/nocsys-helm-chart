@@ -34,3 +34,6 @@
 [submodule "jupyter-enterprise-gateway"]
 	path = jupyter-enterprise-gateway
 	url = https://github.com/nocsyshelmrepo/jupyter_enterprise_gateway
+[submodule "kuberay-operator"]
+	path = kuberay-operator
+	url = https://github.com/ray-project/kuberay-helm
