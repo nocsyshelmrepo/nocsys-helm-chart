@@ -366,6 +366,28 @@ entries:
     urls:
     - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/jupyterhub-0.0.1-set.by.chartpress/jupyterhub-0.0.1-set.by.chartpress.tgz
     version: 0.0.1-set.by.chartpress
+  kuberay-operator:
+  - apiVersion: v2
+    created: "2025-06-30T02:15:29.44055962Z"
+    description: A Helm chart for deploying the Kuberay operator on Kubernetes.
+    digest: 82d0d238da1e73c92c5473f2473d440e51d71a3dcf59276b9215fce7920eaaf1
+    home: https://github.com/ray-project/kuberay
+    icon: https://github.com/ray-project/ray/raw/master/doc/source/images/ray_header_logo.png
+    keywords:
+    - ray
+    - ray operator
+    - distributed computing
+    - data processing
+    - machine learning
+    - deep learning
+    - hyperparameter tuning
+    - reinforcement learning
+    - model serving
+    name: kuberay-operator
+    type: application
+    urls:
+    - https://github.com/nocsyshelmrepo/nocsys-helm-chart/releases/download/kuberay-operator-1.4.0/kuberay-operator-1.4.0.tgz
+    version: 1.4.0
   label-studio:
   - apiVersion: v2
     appVersion: 1.17.0
@@ -580,4 +602,4 @@ entries:
     urls:
     - https://github.com/zabbix-community/helm-zabbix/releases/download/zabbix-7.0.6/zabbix-7.0.6.tgz
     version: 7.0.6
-generated: "2025-06-24T02:08:58.066404976Z"
+generated: "2025-06-30T02:15:29.440594365Z"
