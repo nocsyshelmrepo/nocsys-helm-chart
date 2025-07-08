@@ -37,3 +37,6 @@
 [submodule "kuberay-operator"]
 	path = kuberay-operator
 	url = https://github.com/ray-project/kuberay-helm
+[submodule "open-webui"]
+	path = open-webui
+	url = https://github.com/open-webui/helm-charts
